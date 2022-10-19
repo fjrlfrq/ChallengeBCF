@@ -9,8 +9,14 @@
 function stringManipulation(word){
     //write your code here
     // console.log(word[0])
-    if (word[0] === "a" ||  word[0] === "i" || word[0] === "u" || word[0] === "e" || word[0] === "o" ){
-        return console.log(word);
+    if (
+        word[0] === "a" ||  
+        word[0] === "i" || 
+        word[0] === "u" || 
+        word[0] === "e" || 
+        word[0] === "o" 
+        ){
+        console.log(word);
     } else {
         return console.log(word.slice(1) + word[0] + "nyo")
     }
