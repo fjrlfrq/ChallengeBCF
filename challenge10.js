@@ -2,9 +2,9 @@
 
 const readline = require('node:readline');
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-  prompt: 'tulis kalimatmu disini > '
+    input: process.stdin,
+    output: process.stdout,
+    prompt: 'tulis kalimatmu disini > '
 });
 
 rl.prompt();
@@ -18,11 +18,11 @@ rl.on('line', function (sentence) {
             arry.push(arr[i]);
         } else {
             arry.push(arr[i].substring(1) + arr[i][j] + "nyo");
-        } 
-    } 
-    console.log(`hasi konversi: ${arry.join(" ")}`);
-  rl.prompt();
+        }
+    }
+    console.log(`hasily konversi: ${arry.join(" ")}`);
+    rl.prompt();
 }).on('close', () => {
-  console.log('Good bye!');
-  process.exit(0);
+    console.log('Good bye!');
+    process.exit(0);
 });
