@@ -20,7 +20,7 @@ rl.on('line', function (sentence) {
             arry.push(arr[i].substring(1) + arr[i][j] + "nyo");
         }
     }
-    console.log(`hasily konversi: ${arry.join(" ")}`);
+    console.log(`hasil konversi: ${arry.join(" ")}`);
     rl.prompt();
 }).on('close', () => {
     console.log('Good bye!');
