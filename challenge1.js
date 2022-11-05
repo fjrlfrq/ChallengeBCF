@@ -1,7 +1,7 @@
 /*Buatlah sebuah fungsi yang dapat menjumlahkan semua parameter yang dimasukkan
 ke ddalam fungsi tersebut.*/
 
-function sum(){
+zsum(){
     //write code here
   let amount = 0;
     for (let j = 0; j < arguments.length; j++) {
