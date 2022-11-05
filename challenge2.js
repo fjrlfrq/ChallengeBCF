@@ -6,7 +6,7 @@ Deret bilangan ini mengikuti aturan sebagai berikut :
 2.yang apabila habis dibagi dengan 6 cetak  "KUS"
 3.yang apabila habis dibagi dengan 5 dan 6 cetak "KASKUS"*/
 
-function deretKaskus(n){
+const deretKaskus = (n) =>{
     //write code here
     let result = ""
     let array =[];
@@ -19,12 +19,12 @@ function deretKaskus(n){
 
     for (let i = 0; i < n; i++) {
         let jumlah = angka[i]
-        if (jumlah % 5 === 0){
-            result = "KAS";
+        if (jumlah % 5 === 0 && jumlah % 6 ===0){
+            result = "KASKUS";
         } else if (jumlah % 6 === 0){
             result = "KUS";
-        } else if (jumlah % 5 === 0 && jumlah % 6 ===0) {
-            result = "KASKUS";
+        } else if (jumlah % 5 === 0) {
+            result = "KAS";
         } else {
             result = jumlah
         }
