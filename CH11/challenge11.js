@@ -40,3 +40,6 @@ rl.on('line', (line) => {
 }).on('close', () => {
     console.log('Hore Anda Menang!');
 });
+
+//output
+//jawaban dari term dari file data.json
