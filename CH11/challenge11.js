@@ -28,7 +28,7 @@ rl.on('line', (line) => {
             console.log('Selamat Anda Benar!');
             console.log(`Pertanyaan: ${data1[tanya].definition}`);
         } else {
-            console.log('Wkwkwkwk, Anda kurang beruntung!');
+            console.log('Wkwkwk, Anda kurang beruntung!');
         }
     } else if (line.trim().toLowerCase() == data1[tanya].term) {
         rl.close();
